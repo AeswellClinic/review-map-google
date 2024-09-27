@@ -225,22 +225,24 @@ body {
         align-items: center;
         height: auto;
     }
-    .left-card, .right-cards {
-        width: 100%;
-        margin-right: 0;
-        display: flex;
-        justify-content: center;
+    .left-card .card,
+    .right-cards .card {
+        width: 100%;    
+        height: 300px;  
+        margin-right: 0; 
     }
-    .right-cards {
-        display: none;
-    }
-    .left-card {
-        width: 100%;
+    .right-cards:nth-child(2) .card:nth-child(2) {
+        display: none; 
     }
     .card {
         width: 100%;
         margin: 10px 0;
-        height: 400px;
+        height: auto;
+    }
+    .left-card .card {
+        width: 100%;
+        height: auto;
+        margin-right: 0;
     }
     .navigation-buttons {
         position: absolute;
@@ -249,17 +251,11 @@ body {
         transform: translateX(-50%);
         display: flex;
         gap: 5px;
-        right: 0;
         justify-content: center;
     }
     .heading {
         text-align: left;
         margin: 20px 0;
         font-size: 28px;
-    }
-    .left-card .card{
-        width: 100%;
-        height: 400px;
-        margin-right: 0;
     }
 }
